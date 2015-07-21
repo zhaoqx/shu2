@@ -21,9 +21,15 @@
             <div class="visit">
                 To learn more about PHP, visit <a href="http://php.net" title="PHP.net Website">http://php.net</a>. 
             </div>
+            <?php
+               if (logged_on()) {
+            ?>
             <div class="invite">
                 To Invite friends: <a href="/Functions/invite.php"> Invite </a>. 
             </div>
+            <?php
+               } 
+            ?>
          </li>
     </ol>
     </div>
