@@ -24,9 +24,9 @@
             <?php
                if (logged_on()) {
             ?>
-            <div class="invite">
-                To Invite friends: <a href="/Functions/invite.php"> Invite </a>. 
-            </div>
+                <div class="invite">
+                    To Invite friends: <a href="invite.php"> Invite </a>. 
+                </div>
             <?php
                } 
             ?>
