@@ -1,6 +1,6 @@
 <?php require_once ("Includes/session.php"); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_cn">
     <head>
         <meta charset="utf-8" />
         <title>My Site's Title</title>

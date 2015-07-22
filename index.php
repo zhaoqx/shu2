@@ -6,21 +6,18 @@
 
 
     <div id="main">
-    <h3>Get started with your website</h3>
+    <h3>欢迎使用</h3>
 
     <ol class="round">
         <li class="one">
-            <h5>Login as admin </h5>
-           The site admin username and password are stored in the config file in the Includes directory. 
+            <h5>Sale </h5>
+            <a href="/Sale/sale.php"> 出售图书 </a>
         </li>
         <li class="two">
-            <h5>Customize your site</h5>
-             After you login, you can add, delete, and modify web pages.
+            <h5>Buy</h5>
+            <a href="/Sale/buy.php"> 购买图书 </a>
          </li>
         <li class="asterisk">
-            <div class="visit">
-                To learn more about PHP, visit <a href="http://php.net" title="PHP.net Website">http://php.net</a>. 
-            </div>
             <?php
                if (logged_on()) {
             ?>
