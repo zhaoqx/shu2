@@ -27,8 +27,10 @@
     function insert_invite($invite_code, $old_user) {
         $query = "INSERT INTO invite_code (invite_code, old_user, status) VALUES (?, ?, ?)";
 
+        global $databaseConnection;
         $statement = $databaseConnection->prepare($query);
-        $statement->bind_param($invite_code, $old_user, 0);
+        $statement->bind_param('ssi', $invite_code, $old_user, $invite_status);
+        $invite_status = 0;
         $statement->execute();
         $statement->store_result();
 
@@ -50,8 +52,8 @@
         <?php
            $invite_code = make_invite_code();
            echo $invite_code;
-           error_log("hi");
-           #insert_invite($invite_code, $_SESSION['username']);
+           insert_invite($invite_code, $_SESSION['username']);
         ?>
+        <a href="index.php">返回</a>
     </body>
 </html>
