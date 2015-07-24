@@ -17,7 +17,7 @@
                 #$header = array('"Authorization: Bearer 9b5751c513182ec5d205f54f39488c4f',);
                 $ask_douban = curl_init();
                 #curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-                curl_setopt($ask_douban, CURLOPT_URL, 'http://www.163.com/');
+                curl_setopt($ask_douban, CURLOPT_URL, 'http://localhost:61737/');
                 #curl_setopt($ch, CURLOPT_HEADER, 0);
                 curl_setopt($ask_douban, CURLOPT_RETURNTRANSFER,1); 
                 #curl_setopt($ch, CURLOPT_BINARYTRANSFER,TRUE); 
