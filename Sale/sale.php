@@ -28,7 +28,7 @@
             </tr> 
             <?php $i++; endforeach; ?>
             <tr>
-                <td> <a href="add_salebook.php"> 添加 </a> </td>
+                <td> <a href="add_salebook.php"> 添加图书 </a> </td>
             </tr>
 
             </table>
