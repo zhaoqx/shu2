@@ -1,20 +1,19 @@
 <?php
     require_once("/Includes/session.php");
-    
     $books = $_SESSION['books'];
-    $_SESSION['books']=$books;
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
+        <link href="/Styles/Sale.css" rel="stylesheet" type="text/css" />
         <title>出售图书</title>
     </head>
     <body>
         <div class="display-list">
             <form action="sale_deal.php" method="post">
-            <table border="0" id="sale_books">
+            <table id="sale_books">
             <tr>
             <th>Name</th>
             <th>Price</th>
@@ -28,7 +27,7 @@
             </tr> 
             <?php $i++; endforeach; ?>
             <tr>
-                <td> <a href="add_salebook.php"> 添加图书 </a> </td>
+                <td>  添加图书 </td>
             </tr>
 
             </table>
