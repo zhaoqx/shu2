@@ -12,9 +12,9 @@
         <title>出售图书</title>
     </head>
     <body>
-        <form action="sale_deal.php" method="post">
-
-            <table border="1" id="sale_books">
+        <div class="display-list">
+            <form action="sale_deal.php" method="post">
+            <table border="0" id="sale_books">
             <tr>
             <th>Name</th>
             <th>Price</th>
@@ -34,6 +34,13 @@
             </table>
             <input name="sale_books" type="hidden" value="<?php print_r($books) ?>" />           
             <input type="submit" name="submit" value="提交">
-        </form>
+            </form>
+        </div>
+        <div class="display-add">
+            <?php 
+                include ("add_salebook.php");
+            ?>
+        </div>
+        
     </body>
 </html>
